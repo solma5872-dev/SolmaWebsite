@@ -1,0 +1,58 @@
+/* SolMa — Typography tokens
+   Logo:    Fraunces (opsz 144, wght 900, SOFT, WONK 1) — wonky high-contrast wordmark
+   Display: Bricolage Grotesque (characterful, friendly, contemporary)
+   Body/UI: Hanken Grotesk (warm, clean, highly readable)
+   Mono:    JetBrains Mono (technical bits, captions, timestamps) */
+
+:root {
+  --font-logo:    "Fraunces", "Hanken Grotesk", serif;
+  --font-display: "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+  --font-sans:    "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  /* Logo variation settings — apply on .solma-logo / hero display */
+  --logo-variation: "opsz" 144, "SOFT" 70, "WONK" 1; /* @kind font */
+
+  /* Type scale — 1.250 major-third-ish, tuned for warmth */
+  --text-2xs: 0.6875rem;  /* 11px */
+  --text-xs:  0.75rem;    /* 12px */
+  --text-sm:  0.875rem;   /* 14px */
+  --text-md:  1rem;       /* 16px — base body */
+  --text-lg:  1.125rem;   /* 18px */
+  --text-xl:  1.375rem;   /* 22px */
+  --text-2xl: 1.75rem;    /* 28px */
+  --text-3xl: 2.25rem;    /* 36px */
+  --text-4xl: 3rem;       /* 48px */
+  --text-5xl: 4rem;       /* 64px */
+  --text-6xl: 5.25rem;    /* 84px */
+
+  /* Weights */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-extra:    800;
+
+  /* Line heights */
+  --leading-tight:   1.08;
+  --leading-snug:    1.2;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-snug:   -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.08em;  /* eyebrows / labels */
+
+  /* Semantic roles */
+  --type-display:  var(--weight-bold) var(--text-5xl)/var(--leading-tight) var(--font-display);
+  --type-title:    var(--weight-bold) var(--text-3xl)/var(--leading-snug) var(--font-display);
+  --type-heading:  var(--weight-semibold) var(--text-xl)/var(--leading-snug) var(--font-sans);
+  --type-body:     var(--weight-regular) var(--text-md)/var(--leading-normal) var(--font-sans);
+  --type-body-sm:  var(--weight-regular) var(--text-sm)/var(--leading-normal) var(--font-sans);
+  --type-label:    var(--weight-semibold) var(--text-sm)/var(--leading-snug) var(--font-sans);
+  --type-eyebrow:  var(--weight-bold) var(--text-xs)/var(--leading-snug) var(--font-sans);
+  --type-mono:     var(--weight-regular) var(--text-sm)/var(--leading-normal) var(--font-mono);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/tokens/radius-shadow.css">
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/brand.css">
+  <link rel="stylesheet" href="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/styles.css">
+  <script src="_ds/solma-design-system-v1-33c9d697-ee54-4311-829f-8750de9082db/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--bg-page); }
+    a { color: var(--coral-500); }
+    a:hover { color: var(--coral-600); }
+  </style>
+</helmet>
+
+<div style="min-height:100vh; display:flex; align-items:center; justify-content:center; padding:32px; position:relative; overflow:hidden;">
+  <div style="position:absolute; top:-180px; left:50%; transform:translateX(-50%); width:560px; height:560px; border-radius:50%; background:radial-gradient(circle,#FCE9C8 0%,rgba(252,248,241,0) 70%); pointer-events:none;"></div>
+
+  <div style="max-width:600px; width:100%; text-align:center; position:relative;">
+    <span class="solma-logo" style="font-size:26px; display:inline-block; margin-bottom:40px;">SolMa</span>
+
+    <h1 style="font-family:var(--font-display); font-weight:800; font-size:38px; line-height:1.28; letter-spacing:-0.02em; color:var(--text-strong); margin:0 0 16px;">TPE/PME et vous avez des difficultés avec vos réseaux sociaux, dites-nous en plus&nbsp;:</h1>
+
+    <p style="font-size:16px; color:var(--text-muted); margin:0 0 32px;">
+      2 minutes, c'est anonyme.
+    </p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdup77WkZOImGlGj0ONbgYaz_-UXEcEzdyQucRChqxUMW5tXg/viewform?usp=sharing&amp;ouid=102712578358931552398" target="_blank" rel="noopener" style="text-decoration:none; display:inline-block;">
+      <x-import component-from-global-scope="SolMaDesignSystem_33c9d6.Button" variant="accent" size="lg" hint-size="auto,52px">Répondre au questionnaire</x-import>
+    </a>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* SolMa — brand wordmark & monogram.
+   The logo is typographic: "SolMa" set in Fraunces Black (wonky, high-contrast).
+   No mascot, no icon. Use these classes anywhere; they need styles.css loaded. */
+
+.solma-logo {
+  font-family: var(--font-logo);
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: var(--logo-variation);
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: var(--coral-500);
+  display: inline-block;
+  white-space: nowrap;
+}
+/* on dark surfaces */
+.solma-logo--cream { color: var(--cream-50); }
+/* monochrome / ink lockup */
+.solma-logo--ink   { color: var(--ink-900); }
+
+/* Square monogram "S" — app icon / where a compact mark is needed.
+   Size it by setting font-size + width/height on the element. */
+.solma-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-logo);
+  font-weight: 900;
+  font-variation-settings: var(--logo-variation);
+  background: var(--coral-500);
+  color: var(--cream-50);
+  border-radius: 30%;            /* squircle; use 50% for a round avatar */
+  line-height: 1;
+  overflow: hidden;
+}
+.solma-mark > span { transform: translateY(-0.04em); }

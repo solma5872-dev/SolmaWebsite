@@ -1,0 +1,44 @@
+/* SolMa — Radius & shadow tokens.
+   Soft rounded corners (friendly, artisanal). Warm espresso-tinted shadows. */
+
+:root {
+  /* Corner radii */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   12px;   /* buttons, inputs */
+  --radius-lg:   16px;   /* cards */
+  --radius-xl:   24px;   /* feature cards, modals */
+  --radius-2xl:  32px;
+  --radius-pill: 999px;  /* chips, avatars, pills */
+
+  /* Borders */
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+
+  /* Shadows — warm-tinted, never neutral gray. Layered & soft. */
+  --shadow-xs: 0 1px 2px rgba(36, 27, 20, 0.06);
+  --shadow-sm: 0 1px 2px rgba(36, 27, 20, 0.05),
+               0 2px 6px rgba(36, 27, 20, 0.06);
+  --shadow-md: 0 2px 4px rgba(36, 27, 20, 0.05),
+               0 8px 20px rgba(36, 27, 20, 0.08);
+  --shadow-lg: 0 4px 8px rgba(36, 27, 20, 0.05),
+               0 18px 40px rgba(36, 27, 20, 0.12);
+  --shadow-xl: 0 8px 16px rgba(36, 27, 20, 0.06),
+               0 32px 64px rgba(36, 27, 20, 0.16);
+
+  /* Warm glow — used sparingly on primary CTAs */
+  --glow-sun:  0 6px 20px rgba(229, 137, 28, 0.32);
+  --glow-coral:0 6px 20px rgba(232, 93, 58, 0.30);
+
+  /* Focus ring */
+  --ring-focus: 0 0 0 3px rgba(240, 162, 61, 0.40);
+
+  /* Motion — gentle, never bouncy-cartoon */
+  --ease-out:   cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --ease-in-out:cubic-bezier(0.65, 0, 0.35, 1);    /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   200ms; /* @kind other */
+  --dur-slow:   320ms; /* @kind other */
+}
+
+@keyframes solma-spin { to { transform: rotate(360deg); } }

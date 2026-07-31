@@ -1,0 +1,94 @@
+/* SolMa — Color tokens
+   Warm, sunny palette. "Sol" = sun. Cream paper, marigold, sunset coral,
+   fresh sage for publish/success, deep espresso ink. */
+
+:root {
+  /* ── Sun / Marigold (primary brand) ───────────────────────── */
+  --sun-50:  #FEF6E9;
+  --sun-100: #FCE9C8;
+  --sun-200: #F8D08C;
+  --sun-300: #F4B85A;
+  --sun-400: #F0A23D; /* primary */
+  --sun-500: #E5891C; /* hover */
+  --sun-600: #C56F12; /* press */
+  --sun-700: #9A5510;
+
+  /* ── Sunset / Coral (secondary, CTAs & highlights) ────────── */
+  --coral-300: #F18E72;
+  --coral-400: #EC6F4E;
+  --coral-500: #E85D3A; /* base */
+  --coral-600: #CF4827;
+  --coral-700: #A8381D;
+
+  /* ── Sage / Leaf (publish, success, community) ────────────── */
+  --sage-300: #6FC7A6;
+  --sage-400: #34B086;
+  --sage-500: #2E9E78; /* base */
+  --sage-600: #237A5D;
+  --sage-700: #1B5C46;
+
+  /* ── Espresso / Ink (text & dark surfaces) ────────────────── */
+  --ink-900: #241B14;
+  --ink-800: #2E241B;
+  --ink-700: #44382D;
+  --ink-600: #6B5B4C;
+  --ink-500: #8A7A6A;
+  --ink-400: #B4A595;
+  --ink-300: #D2C6B6;
+
+  /* ── Sand / Cream (warm surfaces & borders) ───────────────── */
+  --cream-50:  #FCF8F1;
+  --cream-100: #F6EEE0;
+  --cream-200: #EDE0CC;
+  --sand-300:  #E2D0B6;
+  --sand-400:  #D4BE9C;
+  --white:     #FFFFFF;
+
+  /* ── Status hues ──────────────────────────────────────────── */
+  --green-500: #2E9E78;
+  --amber-500: #E5891C;
+  --red-500:   #D7472F;
+  --red-50:    #FBE9E5;
+  --blue-500:  #2E6FB0;
+  --blue-50:   #E7F0F8;
+
+  /* ── Semantic aliases ─────────────────────────────────────── */
+  --bg-page:          var(--cream-50);
+  --bg-surface:       var(--white);
+  --bg-surface-warm:  var(--cream-100);
+  --bg-inset:         var(--cream-100);
+  --bg-inverse:       var(--ink-900);
+  --bg-sun-soft:      var(--sun-50);
+
+  --text-strong:      var(--ink-900);
+  --text-body:        var(--ink-700);
+  --text-muted:       var(--ink-500);
+  --text-on-primary:  var(--ink-900);   /* dark ink on marigold */
+  --text-on-coral:    var(--white);
+  --text-on-sage:     var(--white);
+  --text-on-inverse:  var(--cream-50);
+  --text-link:        var(--coral-600);
+
+  --border-subtle:    var(--sand-300);
+  --border-strong:    var(--ink-300);
+  --border-focus:     var(--sun-500);
+
+  --primary:          var(--sun-400);
+  --primary-hover:    var(--sun-500);
+  --primary-press:    var(--sun-600);
+  --accent:           var(--coral-500);
+  --accent-hover:     var(--coral-600);
+  --positive:         var(--sage-500);
+  --positive-hover:   var(--sage-600);
+
+  --success:          var(--green-500);
+  --warning:          var(--amber-500);
+  --danger:           var(--red-500);
+  --info:             var(--blue-500);
+
+  /* WhatsApp-context surfaces (used by the product UI kit only) */
+  --wa-bg:        #E5DDD3;
+  --wa-bubble-in: #FFFFFF;
+  --wa-bubble-out:#DFF7C7;
+  --wa-header:    #F0EDE7;
+}
